@@ -2,6 +2,7 @@ import "./App.css";
 import { Status } from "./components/Status";
 import { Heading } from './components/Heading'
 import { Oscar } from "./components/Oscar";
+import { Greet } from "./components/Greet";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Oscar>
         <Heading>Oscar goes to Leonardo</Heading>
       </Oscar>
+      <Greet name='Vishwas' isLogIn={false} />
     </div>
   );
 }
