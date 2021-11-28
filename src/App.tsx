@@ -1,10 +1,13 @@
 import "./App.css";
-import { LoggedIn } from './components/state/LoggedIn'
+import { ThemeContextProvider } from './components/context/ThemeContext'
+import { Box } from './components/context/Box'
 
 function App() {
   return (
     <div className="App">
-      <LoggedIn/>
+      <ThemeContextProvider>
+        <Box/>
+      </ThemeContextProvider>
     </div>
   );
 }
