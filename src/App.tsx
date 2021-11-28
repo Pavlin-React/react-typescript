@@ -3,17 +3,16 @@ import { Status } from "./components/Status";
 import { Heading } from './components/Heading'
 import { Oscar } from "./components/Oscar";
 import { Greet } from "./components/Greet";
+import { Button } from "./components/Button";
 
 function App() {
 
   return (
     <div className="App">
-      <Status status='loading' />
-      <Heading>placeholder text</Heading>
-      <Oscar>
-        <Heading>Oscar goes to Leonardo</Heading>
-      </Oscar>
-      <Greet name='Vishwas' isLogIn={false} />
+      <Button clickEvent={() => {
+        console.log('Button Clicked');
+        
+      }} />
     </div>
   );
 }
