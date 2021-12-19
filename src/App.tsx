@@ -1,13 +1,11 @@
 import "./App.css";
-import { User } from "./components/context/User";
-import { UserContextProvider } from "./components/context/UserContext";
+import { Private } from "./components/auth/Private";
+import { Profile } from './components/auth/profile';
 
 function App() {
   return (
     <div className="App">
-      <UserContextProvider>
-        <User/>
-      </UserContextProvider>
+      <Private isLoggedIn={true} Component={Profile} />
     </div>
   );
 }
